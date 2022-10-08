@@ -27,6 +27,8 @@ function colorGrid() {
       break;
     case "grey":
       if (this.style.backgroundColor.match(/rgba/)) {
+        console.log(this.style.backgroundColor);
+        console.log(Number(this.style.backgroundColor.slice(-4,-1)));
         let currentOpacity = Number(this.style.backgroundColor.slice(-4, -1));
         if (currentOpacity <= 0.9) {
           this.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;

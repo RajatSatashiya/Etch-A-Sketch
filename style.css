@@ -115,6 +115,8 @@ input:focus {
 }
 button:focus {
   outline: none;
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+  color: var(--bg-clr-6);
 }
 .grid-options {
   display: flex;
